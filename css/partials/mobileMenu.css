@@ -1,0 +1,62 @@
+.ctaMobile__btn {
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
+  right: 36px;
+  top: 12px;
+  cursor: pointer;
+  z-index: 1;
+}
+.mobMenu {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: rgba(60, 55, 68, 0.9);
+  overflow: hidden;
+  transition: 0.5s ease-out;
+}
+.mobMenu__content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.mobMenu__content--link {
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  display: block;
+  transition: 0.3s ease-in;
+}
+.mobMenu__content--link:hover {
+  text-decoration: underline;
+  color: #b4c5e4;
+}
+.mobMenu__closebtn {
+  position: absolute;
+  font-size: 2.5rem;
+  right: 35px;
+  top: 12px;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+.fa-bars:hover,
+.fa-window-close:hover {
+  color: #b4c5e4;
+}
+.ctaMobile {
+  display: none;
+}
+
+@media (max-width: 767px) /*Mobile*/ {
+  .ctaMobile {
+    display: block;
+  }
+}

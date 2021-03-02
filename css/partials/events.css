@@ -1,0 +1,137 @@
+.heroEvent {
+  width: 100%;
+  height: 85vh;
+  background-image: url(/img/rsz_andrew-ruiz-348421.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.event__width {
+  width: 80%;
+  margin: auto;
+}
+.introEvent {
+  margin-top: 50px;
+  border-radius: 10px;
+  min-height: 150px;
+  padding: 20px;
+  box-shadow: 9px 5px 17px black;
+  background-color: white;
+}
+.h2Event {
+  text-align: center;
+}
+.eventGrid {
+  display: grid;
+  justify-content: space-between;
+  grid-row-gap: 64px;
+  grid-column-gap: 32px;
+  grid-template-areas:
+    "event1 event2 event3"
+    "event4 event5 event6";
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.eventGrid__card1 {
+  grid-area: event1;
+}
+.eventGrid__card2 {
+  grid-area: event2;
+}
+.eventGrid__card3 {
+  grid-area: event3;
+}
+.eventGrid__card4 {
+  grid-area: event4;
+}
+.eventGrid__card5 {
+  grid-area: event5;
+}
+.eventGrid__card6 {
+  grid-area: event6;
+}
+
+.eventGrid__card1--txt,
+.eventGrid__card2--txt,
+.eventGrid__card3--txt,
+.eventGrid__card4--txt,
+.eventGrid__card5--txt,
+.eventGrid__card6--txt {
+  border-radius: 10px;
+  width: 300px;
+  margin-top: 16px;
+  padding: 20px;
+  box-shadow: 9px 5px 17px black;
+  background-color: white;
+}
+.eventGrid__card1--img,
+.eventGrid__card2--img,
+.eventGrid__card3--img,
+.eventGrid__card4--img,
+.eventGrid__card5--img,
+.eventGrid__card6--img {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  box-shadow: 9px 5px 17px black;
+  border-radius: 10px;
+}
+.eventGrid__card1--img {
+  background-image: url(/img//rsz_pexels-thisisengineering-3862617.jpg);
+}
+.eventGrid__card2--img {
+  background-image: url(/img/rsz_roberto-nickson-396152.jpg);
+}
+.eventGrid__card3--img {
+  background-image: url(/img/rsz_pexels-killian-eon-2635595.jpg);
+}
+.eventGrid__card4--img {
+  background-image: url(/img/rsz_samuel-zeller-113381.jpg);
+}
+.eventGrid__card5--img {
+  background-image: url(/img/rsz_pexels-tima-miroshnichenko-5846120.jpg);
+}
+.eventGrid__card6--img {
+  background-image: url(/img/rsz_pexels-clive-kim-4220967.jpg);
+}
+
+@media (max-width: 1200px) /*Desktop*/ {
+  .eventGrid {
+    justify-content: center;
+    grid-template-areas:
+      "event1 event2"
+      "event3 event4"
+      "event5 event6";
+  }
+  .event__width {
+    width: 95%;
+  }
+}
+
+@media (max-width: 991px) /*Tablet*/ {
+}
+@media (max-width: 767px) /*Mobile*/ {
+  .eventGrid__card1--txt,
+  .eventGrid__card2--txt,
+  .eventGrid__card3--txt,
+  .eventGrid__card4--txt,
+  .eventGrid__card5--txt,
+  .eventGrid__card6--txt {
+    max-width: 425px;
+  }
+  .eventGrid {
+    justify-content: center;
+    grid-template-areas:
+      "event1"
+      "event2"
+      "event3"
+      "event4"
+      "event5"
+      "event6";
+  }
+}

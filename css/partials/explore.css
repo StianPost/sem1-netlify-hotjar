@@ -1,0 +1,148 @@
+.heroExplore {
+  width: 100%;
+  height: 85vh;
+  background-image: url(/img/rsz_1mammoth-1257288_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.explore__width {
+  width: 80%;
+  margin: auto;
+}
+.introExplore {
+  margin-top: 50px;
+  border-radius: 10px;
+  min-height: 150px;
+  padding: 20px;
+  box-shadow: 9px 5px 17px black;
+  background-color: white;
+}
+.h2Explore {
+  text-align: center;
+}
+.expGrid {
+  display: grid;
+  justify-content: space-between;
+  grid-row-gap: 64px;
+  grid-column-gap: 32px;
+  grid-template-areas:
+    "exp1 exp2 exp3"
+    "exp4 exp5 exp6";
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.expGrid__card1 {
+  grid-area: exp1;
+  width: 300px;
+}
+.expGrid__card2 {
+  grid-area: exp2;
+  width: 300px;
+}
+.expGrid__card3 {
+  grid-area: exp3;
+  width: 300px;
+}
+.expGrid__card4 {
+  grid-area: exp4;
+  width: 300px;
+}
+.expGrid__card5 {
+  grid-area: exp5;
+  width: 300px;
+}
+.expGrid__card6 {
+  grid-area: exp6;
+  width: 300px;
+}
+.expGrid__card1--txt,
+.expGrid__card2--txt,
+.expGrid__card3--txt,
+.expGrid__card4--txt,
+.expGrid__card5--txt,
+.expGrid__card6--txt {
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 16px;
+  padding: 20px;
+  box-shadow: 9px 5px 17px black;
+  background-color: white;
+}
+.expGrid__card1--img,
+.expGrid__card2--img,
+.expGrid__card3--img,
+.expGrid__card4--img,
+.expGrid__card5--img,
+.expGrid__card6--img {
+  background-image: url(/img/rsz_samuel-zeller-113381.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  box-shadow: 9px 5px 17px black;
+  border-radius: 10px;
+}
+.expGrid__card2--img {
+  background-image: url(/img/rsz_samuel-zeller-158996.jpg);
+}
+.expGrid__card3--img {
+  background-image: url(/img/pexels-photo-3913025.jpeg);
+}
+.expGrid__card4--img {
+  background-image: url(/img/rsz_pexels-marcio-nascimento-5479116.jpg);
+}
+.expGrid__card5--img {
+  background-image: url(/img/pexels-photo-1114690.jpeg);
+}
+.expGrid__card6--img {
+  background-image: url(/img/rsz_pexels-rfstudio-3825578.jpg);
+}
+@media (max-width: 1200px) /*Desktop*/ {
+  .explore__width {
+    width: 95%;
+  }
+  .expGrid {
+    justify-content: center;
+    grid-template-areas:
+      "exp1 exp2"
+      "exp3 exp4"
+      "exp5 exp6";
+  }
+}
+
+@media (max-width: 991px) /*Tablet*/ {
+  .expGrid__card1,
+  .expGrid__card2,
+  .expGrid__card3,
+  .expGrid__card4,
+  .expGrid__card5,
+  .expGrid__card6 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) /*Mobile*/ {
+  .expGrid {
+    grid-template-areas:
+      "exp1"
+      "exp2"
+      "exp3"
+      "exp4"
+      "exp5"
+      "exp6";
+  }
+  .expGrid__card1,
+  .expGrid__card2,
+  .expGrid__card3,
+  .expGrid__card4,
+  .expGrid__card5,
+  .expGrid__card6 {
+    width: 100%;
+    max-width: 500px;
+  }
+}
